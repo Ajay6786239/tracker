@@ -1,38 +1,92 @@
+/* App.css */
+
 .App {
   text-align: center;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="file"] {
+  margin: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.result ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.result li {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background: #f1f1f1;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.result li.highlight {
+  background: #d4edda; /* Light green background */
+  color: #155724; /* Dark green text */
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  background: #ffe6e6;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+
+.loading {
+  font-size: 1.2rem;
+  color: #007bff;
 }
